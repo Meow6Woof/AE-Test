@@ -17,6 +17,6 @@ $productListGenerator->productListGenerate(mt_rand(100, 200));
 $ymlGenerator = new YMLGenerator($productListGenerator->getProductList(), 'Test Shop', 'Test Company', 'https://ae-test.ru');
 $ymlGenerator->YMLGenerate();
 
-$ymlGenerator->getFileYML('../XML/market.xml');
+$ymlGenerator->getFileYML('../xml/market.xml');
 echo $ymlGenerator->getStringYML();
 ?>
